@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+	var haystack = ['cat','dog','bird','turtle','lizard']; 
+	var needle = ['dog','lizard','flower','monkey','unicorn']; 
+	var output = null;
+	function needle_finder(haystack_array, needle_array){
+		output = [];
+		for (var i = 0; i < haystack_array.length; i++ ){
+			for (var j = 0; j < needle_array.length; j++){
+				if (needle_array[j] == haystack_array[i]){
+					console.log(needle_array[j] + ' = ' + haystack_array[i]);
+					output.push(needle_array[j]);
+				}
+			}
+		}
+	}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

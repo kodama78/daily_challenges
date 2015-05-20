@@ -3,11 +3,12 @@
 <head>
 	<title></title>
 	<script type="text/javascript">
+	/* DAILY CHALLENGE 001 */
 	var haystack = ['cat','dog','bird','turtle','lizard']; 
 	var needle = ['dog','lizard','flower','monkey','unicorn']; 
 	var output = null;
 	function needle_finder(haystack_array, needle_array){
-		output = [];
+		var output = [];
 		for (var i = 0; i < haystack_array.length; i++ ){
 			for (var j = 0; j < needle_array.length; j++){
 				if (needle_array[j] == haystack_array[i]){
@@ -16,6 +17,23 @@
 				}
 			}
 		}
+		return output;
+	}
+
+	/* DAILY CHALLENGE 002 */
+	var first_array = [1, 3, 5];
+	var needle_array = [1, 3, 5];
+	output = null;
+	function add_it(array_one, array_two){
+		var output = [];
+		for (var i = 0; i < array_one.length; i++){
+			for (var j = 0; j < array_two.length; j++){
+				if (i == j){
+					output.push(array_one[i] + array_two[j]);
+				}
+			}
+		}
+		return output;
 	}
 	</script>
 </head>

@@ -84,4 +84,24 @@
 			}
 			return list_array;
 		}
+
+	/* DAILY CHALLENGE 006 */
+	function dual_counter(a_number){
+		for(var i = 0, j = a_number; i <= a_number, j >= 0; i++, j--){
+			console.log(i);
+			console.log(j);
+		}
+	}
+	/* DAILY CHALLENGE 007 */
+	var random_array = [1, 2, 3, 4, 5];
+	function randomize_list(array){
+		var output = [];
+		for (var i = 0; i < array.length;) {
+		var random = Math.floor(Math.random()*array.length);
+		output.push(array[random]);
+		array.splice(random, 1);
+		}
+		array = output;
+		return array;
+	}
 	</script>
